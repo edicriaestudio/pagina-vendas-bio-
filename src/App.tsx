@@ -54,11 +54,12 @@ export default function App() {
             Explorar o Arsenal <ArrowRight size={18} />
           </a>
           
-          <div className="mt-8 flex items-center gap-4 font-sans text-xs text-white/50">
-            <div className="flex -space-x-3">
-              {[1,2,3,4].map(i => <div key={i} className="w-8 h-8 rounded-full border border-[#050505] bg-white/10 backdrop-blur-sm"></div>)}
+          {/* ESTRELINHAS NO LUGAR DAS BOLINHAS VAZIAS */}
+          <div className="mt-8 flex items-center gap-2 font-sans text-xs text-white/50">
+            <div className="flex text-edNeon">
+              {[1,2,3,4,5].map(i => <Star key={i} size={14} className="fill-edNeon" />)}
             </div>
-            <span>Junte-se a +3.400 criadores.</span>
+            <span className="ml-2">Junte-se a +3.400 criadores.</span>
           </div>
         </div>
 
@@ -198,12 +199,12 @@ export default function App() {
                 <li className="flex items-center gap-3"><CheckCircle2 size={18} className="text-edNeon"/> <b>+ 30 Templates Exclusivos (Total 50+)</b></li>
                 <li className="flex items-center gap-3"><CheckCircle2 size={18} className="text-edNeon"/> Estruturas baseadas em Copywriting</li>
                 
-                {/* Bônus Oficiais */}
+                {/* Bônus Oficiais CORRIGIDOS */}
                 <div className="pt-4 mt-4 border-t border-white/10">
                   <div className="text-[10px] uppercase tracking-widest text-edNeon mb-3">Bônus Inclusos:</div>
-                  <li className="flex items-center gap-3"><Zap size={18} className="text-edNeon shrink-0"/> <b>BÔNUS 1:</b> Design Site System Blueprint</li>
-                  <li className="flex items-center gap-3"><Zap size={18} className="text-edNeon shrink-0"/> <b>BÔNUS 2:</b> 15 Golden Skill De Motions</li>
-                  <li className="flex items-center gap-3"><Zap size={18} className="text-edNeon shrink-0"/> <b>BÔNUS 3:</b> Kit Cinematográfico Prompts Secretos</li>
+                  <li className="flex items-center gap-3"><Zap size={18} className="text-edNeon shrink-0"/> <b>BÔNUS:</b> Design Site System Blueprint</li>
+                  <li className="flex items-center gap-3"><Zap size={18} className="text-edNeon shrink-0"/> <b>BÔNUS:</b> 15 Golden Skill De Motions</li>
+                  <li className="flex items-center gap-3"><Zap size={18} className="text-edNeon shrink-0"/> <b>BÔNUS:</b> Kit Cinematográfico Prompts Secretos</li>
                 </div>
               </ul>
 
