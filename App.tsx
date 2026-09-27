@@ -1,5 +1,4 @@
-
-import { CheckCircle2, Lock, Zap, Star, ShieldCheck, HelpCircle, ArrowRight } from 'lucide-react';
+  import { CheckCircle2, Lock, Zap, Star, ShieldCheck, HelpCircle, ArrowRight } from 'lucide-react';
 
 const mockups = [
   '/media_1790542334883.png', // Beauty (Luana Silva)
